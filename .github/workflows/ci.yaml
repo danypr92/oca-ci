@@ -45,7 +45,7 @@ jobs:
             image_name: py3.10-ocb16.0
     services:
       postgres:
-        image: postgres:9.6
+        image: postgres:12.15
         env:
           POSTGRES_USER: odoo
           POSTGRES_PASSWORD: odoo
