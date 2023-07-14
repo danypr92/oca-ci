@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - master
+      - coopdevs
   pull_request:
   schedule:
     - cron: "0 4 * * *"
