@@ -148,7 +148,7 @@ ENV PGPASSWORD=odoo
 ENV PGDATABASE=odoo
 # This PEP 503 index uses odoo addons from OCA and redirects the rest to PyPI,
 # in effect hiding all non-OCA Odoo addons that are on PyPI.
-ENV PIP_INDEX_URL=https://wheelhouse.odoo-community.org/oca-simple-and-pypi
+# ENV PIP_INDEX_URL=https://wheelhouse.odoo-community.org/oca-simple-and-pypi
 ENV PIP_DISABLE_PIP_VERSION_CHECK=1
 ENV PIP_NO_PYTHON_VERSION_WARNING=1
 # Control addons discovery. INCLUDE and EXCLUDE are comma-separated list of
