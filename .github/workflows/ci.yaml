@@ -27,23 +27,6 @@ jobs:
             odoo_org_repo: "oca/ocb"
             setuptools_constraint: "<58"  # vatnumber needs setuptools with 2to3 support
             image_name: py3.7-ocb12.0
-          - python_version: "3.8"
-            odoo_version: "12.0"
-            odoo_org_repo: "oca/ocb"
-            setuptools_constraint: "<58"  # vatnumber needs setuptools with 2to3 support
-            image_name: py3.8-ocb12.0
-          - python_version: "3.7"
-            odoo_version: "14.0"
-            odoo_org_repo: "oca/ocb"
-            image_name: py3.7-ocb14.0
-          - python_version: "3.8"
-            odoo_version: "14.0"
-            odoo_org_repo: "oca/ocb"
-            image_name: py3.8-ocb14.0
-          - python_version: "3.10"
-            odoo_version: "16.0"
-            odoo_org_repo: "oca/ocb"
-            image_name: py3.10-ocb16.0
     services:
       postgres:
         image: postgres:12.15
