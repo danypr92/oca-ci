@@ -57,7 +57,7 @@ jobs:
             ghcr.io/oca/oca-ci/${{ matrix.image_name }}:latest
           labels: |
             org.opencontainers.image.source=${{ github.event.repository.html_url }}
-          cache-from: type=registry,ref=ghcr.io/coopdevs/oca-ci/${{ matrix.image_name }}:latest
+          cache-from: type=registry,ref=ghcr.io/danypr92/oca-ci/${{ matrix.image_name }}:latest
           cache-to: type=local,dest=/tmp/.buildx-cache
           load: true
       - name: Checkout
@@ -75,10 +75,10 @@ jobs:
             odoo_org_repo=${{ matrix.odoo_org_repo }}
             setuptools_constraint=${{ matrix.setuptools_constraint }}
           tags: |
-            ghcr.io/coopdevs/oca-ci/${{ matrix.image_name }}:latest
+            ghcr.io/danypr92/oca-ci/${{ matrix.image_name }}:latest
           labels: |
             org.opencontainers.image.source=${{ github.event.repository.html_url }}
           cache-from: type=local,src=/tmp/.buildx-cache
           cache-to: type=inline
           push: true
-        if: ${{ github.repository_owner == 'coopdevs' && github.ref == 'refs/heads/coopdevs' }}
+        if: ${{ github.repository_owner == 'danypr92' && github.ref == 'refs/heads/coopdevs' }}
